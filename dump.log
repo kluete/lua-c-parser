@@ -1,0 +1,82 @@
+Lua source dir "~/development/lua-5.2.2/src/"
+
+  found 61 Lua source files
+
+"lstrlib.c"
+  [ 2570: 2614] 'luaL_error(L, "resulting string too large");'
+  [ 3575: 3614] 'luaL_error(L, "string slice too long");'
+  [ 4440: 4487] 'luaL_error(L, "unable to dump given function");'
+  [ 5577: 5632] 'luaL_error(ms->L, "invalid capture index %%%d", l + 1);'
+  [ 5829: 5874] 'luaL_error(ms->L, "invalid pattern capture");'
+  [ 6011: 6079] 'luaL_error(ms->L, "malformed pattern (ends with " LUA_QL("%%") ")");'
+  [ 6217: 6282] 'luaL_error(ms->L, "malformed pattern (missing " LUA_QL("]") ")");'
+  [ 8118: 8223] 'luaL_error(ms->L, "malformed pattern " "(missing arguments to " LUA_QL("%%b") ")");'
+  [ 9524: 9563] 'luaL_error(ms->L, "too many captures");'
+  [10518:10559] 'luaL_error(ms->L, "pattern too complex");'
+  [11766:11879] 'luaL_error(ms->L, "missing " LUA_QL("[") " after " LUA_QL("%%f") " in pattern");'
+  [15190:15233] 'luaL_error(ms->L, "invalid capture index");'
+  [15314:15354] 'luaL_error(ms->L, "unfinished capture");'
+  [19211:19320] 'luaL_error(ms->L, "invalid use of " LUA_QL("%c") " in replacement string", L_ESC);'
+  [20280:20352] 'luaL_error(L, "invalid replacement value (a %s)", luaL_typename(L, -1));'
+  [23656:23705] 'luaL_error(L, "invalid format (repeated flags)");'
+  [23988:24050] 'luaL_error(L, "invalid format (width or precision too long)");'
+  [27090:27209] 'luaL_error(L, "invalid option " LUA_QL("%%%c") " to " LUA_QL("format"), *(strfrmt - 1));'
+
+"ltablib.c"
+  [ 1374: 1438] 'luaL_error(L, "wrong number of arguments to " LUA_QL("insert"));'
+  [ 2105: 2227] 'luaL_error(L, "invalid value (%s) at index %d in table for " LUA_QL("concat"), luaL_typename(L, -1), i);'
+  [ 3778: 3822] 'luaL_error(L, "too many results to unpack");'
+  [ 5934: 5986] 'luaL_error(L, "invalid order function for sorting");'
+  [ 6155: 6207] 'luaL_error(L, "invalid order function for sorting");'
+
+"lbaselib.c"
+  [  697:  784] 'luaL_error(L, LUA_QL("tostring") " must return a string to " LUA_QL("print"));'
+  [ 3165: 3218] 'luaL_error(L, "cannot change a protected metatable");'
+  [ 8087: 8141] 'luaL_error(L, "reader function must return a string");'
+  [ 9434: 9497] 'luaL_error(L, "%s", luaL_optstring(L, 2, "assertion failed!"));'
+
+"lmathlib.c"
+  [ 5336: 5379] 'luaL_error(L, "wrong number of arguments");'
+
+"liolib.c"
+  [ 3361: 3407] 'luaL_error(L, "attempt to use a closed file");'
+  [ 4920: 4994] 'luaL_error(L, "cannot open file " LUA_QS " (%s)", fname, strerror(errno));'
+  [ 6161: 6233] 'luaL_error(L, "standard %s file is closed", findex + strlen(IO_PREFIX));'
+  [12254:12294] 'luaL_error(L, "file is already closed");'
+  [12784:12829] 'luaL_error(L, "%s", lua_tostring(L, -n + 1));'
+
+"lbitlib.c"
+  [ 3324: 3376] 'luaL_error(L, "trying to access non-existent bits");'
+
+"loadlib.c"
+  [ 4106: 4152] 'luaL_error(L, "unable to get ModuleFileName");'
+  [10671:10734] 'luaL_error(L, LUA_QL("package.%s") " must be a string", pname);'
+  [11056:11235] 'luaL_error(L, "error loading module " LUA_QS " from file " LUA_QS ":\n\t%s", lua_tostring(L, 1), filename, lua_tostring(L, -1));'
+  [13776:13838] 'luaL_error(L, LUA_QL("package.searchers") " must be a table");'
+  [14125:14220] 'luaL_error(L, "module " LUA_QS " not found:%s", name, lua_tostring(L, -1));'
+  [16178:16244] 'luaL_error(L, LUA_QL("module") " not called from a Lua function");'
+
+"lauxlib.c"
+  [ 4299: 4354] 'luaL_error(L, "bad argument #%d (%s)", narg, extramsg);'
+  [ 4543: 4642] 'luaL_error(L, "calling " LUA_QS " on bad self (%s)", ar.name, extramsg);'
+  [ 4751: 4853] 'luaL_error(L, "bad argument #%d to " LUA_QS " (%s)", narg, ar.name, extramsg);'
+  [ 9532: 9574] 'luaL_error(L, "stack overflow (%s)", msg);'
+  [ 9590: 9622] 'luaL_error(L, "stack overflow");'
+  [12280:12314] 'luaL_error(L, "buffer too large");'
+  [20217:20264] 'luaL_error(L, "object length is not a number");'
+  [23017:23076] 'luaL_error(L, "name conflict for module " LUA_QS, modname);'
+  [27051:27094] 'luaL_error(L, "multiple Lua VMs detected");'
+  [27121:27219] 'luaL_error(L, "version mismatch: app. needs %f, Lua core provides %f", ver, *v);'
+  [27411:27517] 'luaL_error(L, "bad conversion number->int;" " must recompile Lua with proper settings");'
+
+"lua.c"
+  [ 2147: 2177] 'luaL_error(L, "interrupted!");'
+
+"lunar.h"
+  [ 3736: 3788] 'luaL_error(L, "%s missing metatable", T::className);'
+
+"loslib.c"
+  [ 2243: 2297] 'luaL_error(L, "unable to generate a unique filename");'
+  [ 3547: 3608] 'luaL_error(L, "field " LUA_QS " missing in date table", key);'
+
+ 55 total hits
